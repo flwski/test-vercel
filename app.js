@@ -127,6 +127,11 @@ async function getDescriptorsFromDB(image) {
 
 // Metodos para acesso via API
 
+app.get('/home',(req, res)=>{
+  res.json({message:'Olaa'})
+} )
+
+
 app.post("/check-face", async (req, res) => {
   try {    
     const File1 = req.files.File1.tempFilePath;
